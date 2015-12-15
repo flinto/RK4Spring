@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E3C28BA1C20A02200CAD137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C28B91C20A02200CAD137 /* AppDelegate.swift */; };
+		6E3C28BC1C20A02200CAD137 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C28BB1C20A02200CAD137 /* ViewController.swift */; };
+		6E3C28BE1C20A02200CAD137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3C28BD1C20A02200CAD137 /* Assets.xcassets */; };
+		6E3C28C11C20A02200CAD137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3C28BF1C20A02200CAD137 /* Main.storyboard */; };
+		6E3C28CB1C20AA6000CAD137 /* RK4Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C28CA1C20AA6000CAD137 /* RK4Spring.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E3C28B61C20A02200CAD137 /* RK4SpringDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RK4SpringDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3C28B91C20A02200CAD137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E3C28BB1C20A02200CAD137 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E3C28BD1C20A02200CAD137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E3C28C01C20A02200CAD137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E3C28C21C20A02200CAD137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E3C28CA1C20AA6000CAD137 /* RK4Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RK4Spring.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E3C28B31C20A02200CAD137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E3C28AD1C20A02200CAD137 = {
+			isa = PBXGroup;
+			children = (
+				6E3C28CA1C20AA6000CAD137 /* RK4Spring.swift */,
+				6E3C28B81C20A02200CAD137 /* RK4SpringDemo */,
+				6E3C28B71C20A02200CAD137 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E3C28B71C20A02200CAD137 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E3C28B61C20A02200CAD137 /* RK4SpringDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E3C28B81C20A02200CAD137 /* RK4SpringDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6E3C28B91C20A02200CAD137 /* AppDelegate.swift */,
+				6E3C28BB1C20A02200CAD137 /* ViewController.swift */,
+				6E3C28BD1C20A02200CAD137 /* Assets.xcassets */,
+				6E3C28BF1C20A02200CAD137 /* Main.storyboard */,
+				6E3C28C21C20A02200CAD137 /* Info.plist */,
+			);
+			path = RK4SpringDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E3C28B51C20A02200CAD137 /* RK4SpringDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E3C28C51C20A02200CAD137 /* Build configuration list for PBXNativeTarget "RK4SpringDemo" */;
+			buildPhases = (
+				6E3C28B21C20A02200CAD137 /* Sources */,
+				6E3C28B31C20A02200CAD137 /* Frameworks */,
+				6E3C28B41C20A02200CAD137 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RK4SpringDemo;
+			productName = RK4SpringDemo;
+			productReference = 6E3C28B61C20A02200CAD137 /* RK4SpringDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E3C28AE1C20A02200CAD137 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Flinto;
+				TargetAttributes = {
+					6E3C28B51C20A02200CAD137 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 6E3C28B11C20A02200CAD137 /* Build configuration list for PBXProject "RK4SpringDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E3C28AD1C20A02200CAD137;
+			productRefGroup = 6E3C28B71C20A02200CAD137 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E3C28B51C20A02200CAD137 /* RK4SpringDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E3C28B41C20A02200CAD137 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E3C28BE1C20A02200CAD137 /* Assets.xcassets in Resources */,
+				6E3C28C11C20A02200CAD137 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E3C28B21C20A02200CAD137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E3C28BC1C20A02200CAD137 /* ViewController.swift in Sources */,
+				6E3C28CB1C20AA6000CAD137 /* RK4Spring.swift in Sources */,
+				6E3C28BA1C20A02200CAD137 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E3C28BF1C20A02200CAD137 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E3C28C01C20A02200CAD137 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E3C28C31C20A02200CAD137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E3C28C41C20A02200CAD137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6E3C28C61C20A02200CAD137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RK4SpringDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flinto.RK4SpringDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E3C28C71C20A02200CAD137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RK4SpringDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flinto.RK4SpringDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E3C28B11C20A02200CAD137 /* Build configuration list for PBXProject "RK4SpringDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E3C28C31C20A02200CAD137 /* Debug */,
+				6E3C28C41C20A02200CAD137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E3C28C51C20A02200CAD137 /* Build configuration list for PBXNativeTarget "RK4SpringDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E3C28C61C20A02200CAD137 /* Debug */,
+				6E3C28C71C20A02200CAD137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E3C28AE1C20A02200CAD137 /* Project object */;
+}
