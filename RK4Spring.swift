@@ -26,31 +26,7 @@ public func RK4SpringAnimation(tension tension:Double, friction:Double, initialV
   return result
 }
 
-
-
-//
-// MARK: - Implementation details
-//
-
-
-private struct SpringState {
-  var x:Double = 0
-  var v:Double = 0
-  var tension:Double = 0
-  var friction:Double = 0
-  init() {}
-}
-
-private struct SpringDerivative {
-  var dx:Double = 0
-  var dv:Double = 0
-  init() {}
-}
-
-private let tolerance = 1/500.0
-
-
-private func lerpRK4Spring(inout value value:Double, tension:Double, friction:Double, inout velocity:Double, delta:NSTimeInterval) -> Bool {
+public func lerpRK4Spring(inout value value:Double, tension:Double, friction:Double, inout velocity:Double, delta:NSTimeInterval) -> Bool {
 
   if delta == 0 {
     return false
@@ -83,6 +59,28 @@ private func lerpRK4Spring(inout value value:Double, tension:Double, friction:Do
   }
   return false
 }
+
+
+//
+// MARK: - Implementation details
+//
+
+
+private struct SpringState {
+  var x:Double = 0
+  var v:Double = 0
+  var tension:Double = 0
+  var friction:Double = 0
+  init() {}
+}
+
+private struct SpringDerivative {
+  var dx:Double = 0
+  var dv:Double = 0
+  init() {}
+}
+
+private let tolerance = 1/500.0
 
 
 private func normalizeSpringValue(value:Double) -> Double {
