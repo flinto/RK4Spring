@@ -5,7 +5,13 @@ public func RK4SpringAnimation(tension tension:Double, friction:Double, initialV
 
   assert(tension >= 5 && tension <= 1000, "Tension should be 5 ~ 1000")
   assert(friction >= 5 && friction <= 100, "Friction should be 5 ~ 100")
-  assert(initialVelocity >= -100 && initialVelocity <= 100, "Velocity should be -100 ~ 100")
+
+  if initialVelocity < -100 {
+    initialVelocity = -100
+  }
+  else if initialVelocity > 100 {
+    initialVelocity = 100
+  }
 
   var result:[Double] = []
   var value:Double = 0
