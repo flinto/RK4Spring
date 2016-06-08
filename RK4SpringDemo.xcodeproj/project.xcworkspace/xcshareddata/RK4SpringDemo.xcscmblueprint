@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B5C0394B43815B01D33E4D674CC069257B99B0A1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B5C0394B43815B01D33E4D674CC069257B99B0A1" : 0,
+    "61A50AEBAB96448F524265A255796F866D4F3CA8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6D0D1BB4-7955-404D-BFB1-1DCBEEFFB5A9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B5C0394B43815B01D33E4D674CC069257B99B0A1" : "Spring\/",
+    "61A50AEBAB96448F524265A255796F866D4F3CA8" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RK4SpringDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RK4SpringDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/flinto\/Nucleator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "61A50AEBAB96448F524265A255796F866D4F3CA8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/flinto\/Spring.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B5C0394B43815B01D33E4D674CC069257B99B0A1"
+    }
+  ]
+}

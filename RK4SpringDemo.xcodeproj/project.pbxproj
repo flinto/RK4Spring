@@ -12,7 +12,18 @@
 		6E3C28BE1C20A02200CAD137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3C28BD1C20A02200CAD137 /* Assets.xcassets */; };
 		6E3C28C11C20A02200CAD137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3C28BF1C20A02200CAD137 /* Main.storyboard */; };
 		6E3C28CB1C20AA6000CAD137 /* RK4Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C28CA1C20AA6000CAD137 /* RK4Spring.swift */; };
+		6E462CAA1D08C51000EA1850 /* RK4SpringDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E462CA91D08C51000EA1850 /* RK4SpringDemoTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E462CAC1D08C51000EA1850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E3C28AE1C20A02200CAD137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E3C28B51C20A02200CAD137;
+			remoteInfo = RK4SpringDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6E3C28B61C20A02200CAD137 /* RK4SpringDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RK4SpringDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		6E3C28C01C20A02200CAD137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E3C28C21C20A02200CAD137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E3C28CA1C20AA6000CAD137 /* RK4Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RK4Spring.swift; sourceTree = "<group>"; };
+		6E462CA71D08C51000EA1850 /* RK4SpringDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RK4SpringDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E462CA91D08C51000EA1850 /* RK4SpringDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RK4SpringDemoTests.swift; sourceTree = "<group>"; };
+		6E462CAB1D08C51000EA1850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6E3C28B31C20A02200CAD137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E462CA41D08C51000EA1850 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +61,7 @@
 			children = (
 				6E3C28CA1C20AA6000CAD137 /* RK4Spring.swift */,
 				6E3C28B81C20A02200CAD137 /* RK4SpringDemo */,
+				6E462CA81D08C51000EA1850 /* RK4SpringDemoTests */,
 				6E3C28B71C20A02200CAD137 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				6E3C28B61C20A02200CAD137 /* RK4SpringDemo.app */,
+				6E462CA71D08C51000EA1850 /* RK4SpringDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				6E3C28C21C20A02200CAD137 /* Info.plist */,
 			);
 			path = RK4SpringDemo;
+			sourceTree = "<group>";
+		};
+		6E462CA81D08C51000EA1850 /* RK4SpringDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E462CA91D08C51000EA1850 /* RK4SpringDemoTests.swift */,
+				6E462CAB1D08C51000EA1850 /* Info.plist */,
+			);
+			path = RK4SpringDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,18 +116,40 @@
 			productReference = 6E3C28B61C20A02200CAD137 /* RK4SpringDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6E462CA61D08C51000EA1850 /* RK4SpringDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E462CB01D08C51000EA1850 /* Build configuration list for PBXNativeTarget "RK4SpringDemoTests" */;
+			buildPhases = (
+				6E462CA31D08C51000EA1850 /* Sources */,
+				6E462CA41D08C51000EA1850 /* Frameworks */,
+				6E462CA51D08C51000EA1850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E462CAD1D08C51000EA1850 /* PBXTargetDependency */,
+			);
+			name = RK4SpringDemoTests;
+			productName = RK4SpringDemoTests;
+			productReference = 6E462CA71D08C51000EA1850 /* RK4SpringDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6E3C28AE1C20A02200CAD137 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Flinto;
 				TargetAttributes = {
 					6E3C28B51C20A02200CAD137 = {
 						CreatedOnToolsVersion = 7.2;
+					};
+					6E462CA61D08C51000EA1850 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 6E3C28B51C20A02200CAD137;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				6E3C28B51C20A02200CAD137 /* RK4SpringDemo */,
+				6E462CA61D08C51000EA1850 /* RK4SpringDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +179,13 @@
 			files = (
 				6E3C28BE1C20A02200CAD137 /* Assets.xcassets in Resources */,
 				6E3C28C11C20A02200CAD137 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E462CA51D08C51000EA1850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E462CA31D08C51000EA1850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E462CAA1D08C51000EA1850 /* RK4SpringDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E462CAD1D08C51000EA1850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E3C28B51C20A02200CAD137 /* RK4SpringDemo */;
+			targetProxy = 6E462CAC1D08C51000EA1850 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6E3C28BF1C20A02200CAD137 /* Main.storyboard */ = {
@@ -258,6 +336,36 @@
 			};
 			name = Release;
 		};
+		6E462CAE1D08C51000EA1850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RK4SpringDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flinto..RK4SpringDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RK4SpringDemo.app/Contents/MacOS/RK4SpringDemo";
+			};
+			name = Debug;
+		};
+		6E462CAF1D08C51000EA1850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RK4SpringDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flinto..RK4SpringDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RK4SpringDemo.app/Contents/MacOS/RK4SpringDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -278,6 +386,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6E462CB01D08C51000EA1850 /* Build configuration list for PBXNativeTarget "RK4SpringDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E462CAE1D08C51000EA1850 /* Debug */,
+				6E462CAF1D08C51000EA1850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
