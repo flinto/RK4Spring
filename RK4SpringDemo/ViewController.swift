@@ -10,7 +10,7 @@ import Cocoa
 
 class CustomView : NSView {
 
-  override var flipped:Bool { return true }
+  override var isFlipped:Bool { return true }
 }
 
 
@@ -26,15 +26,15 @@ class ViewController: NSViewController {
   override func viewDidAppear() {
     super.viewDidAppear()
     shape = CAShapeLayer()
-    let path = CGPathCreateWithEllipseInRect(CGRectMake(0, 0, 50, 50), nil)
+    let path = CGPath(ellipseIn: CGRect(x: 0, y: 0, width: 50, height: 50), transform: nil)
     shape.path = path
-    shape.fillColor = NSColor.redColor().CGColor
-    shape.position = CGPointMake(customView.frame.size.width/2, 0)
+    shape.fillColor = NSColor.red.cgColor
+    shape.position = CGPoint(x: customView.frame.size.width/2, y: 0)
     customView.layer!.addSublayer(shape)
 
   }
 
-  @IBAction func didClickButton(sender: AnyObject) {
+  @IBAction func didClickButton(_ sender: AnyObject) {
     let values = RK4SpringAnimation(tension: tension, friction: friction, initialVelocity: velocity)
     //
     //  Because `RK4SpringAnimation` return values between 0.0 ~ 1.0, we have to multiply 100.0 to these values
@@ -47,10 +47,10 @@ class ViewController: NSViewController {
     anim.values = positions
 
     // One sample equal to 1/60 s
-    anim.duration = Double(values.count) * 1 / 60.0
+    anim.duration = 0.5//Double(values.count) * 1 / 60.0
 
-    shape.addAnimation(anim, forKey: "position")
-    shape.setValue(NSNumber(double: 100.0), forKey: "position.y")
+    shape.add(anim, forKey: "position")
+    shape.setValue(NSNumber(value: 100.0 as Double), forKey: "position.y")
 
   }
 
