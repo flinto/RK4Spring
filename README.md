@@ -28,7 +28,7 @@ let anim = CAKeyframeAnimation(keyPath: "position.y")
 anim.values = positions
 anim.duration = Double(values.count) * 1 / 60.0
 
-layer.addAnimation(anim, forKey: "spring")
-layer.setValue(NSNumber(double: 100), forKey: "position.y")
+layer.add(anim, forKey: "spring")
+layer.setValue(NSNumber(value: 100.0 as Double), forKey: "position.y")
 
 ```
