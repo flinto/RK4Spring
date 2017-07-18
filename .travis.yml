@@ -6,8 +6,8 @@ env:
 before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
-before_script:
-- carthage bootstrap
+# before_script:
+# - carthage bootstrap
 script: xcodebuild test -scheme RK4Spring_iOS -sdk iphonesimulator -destination 'platform=iOS
   Simulator,name=iPhone 7,OS=11.0'
 before_deploy:
