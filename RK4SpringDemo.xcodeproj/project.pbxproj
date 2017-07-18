@@ -11,7 +11,7 @@
 		6E3BBB5F1F1E757800894AF1 /* RK4Spring.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3BBB571F1E757800894AF1 /* RK4Spring.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E3BBB721F1E759800894AF1 /* RK4Spring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3BBB691F1E759800894AF1 /* RK4Spring.framework */; };
 		6E3BBB771F1E759800894AF1 /* RK4Spring_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3BBB761F1E759800894AF1 /* RK4Spring_iOSTests.swift */; };
-		6E3BBB791F1E759800894AF1 /* RK4Spring_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3BBB6B1F1E759800894AF1 /* RK4Spring_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E3BBB791F1E759800894AF1 /* RK4Spring.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3BBB6B1F1E759800894AF1 /* RK4Spring.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E3BBB801F1E765900894AF1 /* RK4Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C28CA1C20AA6000CAD137 /* RK4Spring.swift */; };
 		6E3BBB811F1E765900894AF1 /* RK4Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C28CA1C20AA6000CAD137 /* RK4Spring.swift */; };
 		6E3BBB841F1E776D00894AF1 /* RK4Spring.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3BBB821F1E776300894AF1 /* RK4Spring.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,7 +56,7 @@
 		6E2D79111F1E783C00E44FB2 /* RK4Spring.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RK4Spring.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6E3BBB571F1E757800894AF1 /* RK4Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RK4Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BBB691F1E759800894AF1 /* RK4Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RK4Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E3BBB6B1F1E759800894AF1 /* RK4Spring_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RK4Spring_iOS.h; sourceTree = "<group>"; };
+		6E3BBB6B1F1E759800894AF1 /* RK4Spring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RK4Spring.h; sourceTree = "<group>"; };
 		6E3BBB6C1F1E759800894AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E3BBB711F1E759800894AF1 /* RK4Spring_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RK4Spring_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3BBB761F1E759800894AF1 /* RK4Spring_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RK4Spring_iOSTests.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		6E3BBB6A1F1E759800894AF1 /* RK4Spring_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6E3BBB6B1F1E759800894AF1 /* RK4Spring_iOS.h */,
+				6E3BBB6B1F1E759800894AF1 /* RK4Spring.h */,
 				6E3BBB6C1F1E759800894AF1 /* Info.plist */,
 			);
 			path = RK4Spring_iOS;
@@ -184,7 +184,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E3BBB791F1E759800894AF1 /* RK4Spring_iOS.h in Headers */,
+				6E3BBB791F1E759800894AF1 /* RK4Spring.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +420,7 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -432,9 +432,8 @@
 				INFOPLIST_FILE = RK4Spring_macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinto.RK4Spring;
-				PRODUCT_MODULE_NAME = RK4Spring;
 				PRODUCT_NAME = RK4Spring;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -458,7 +457,7 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -470,9 +469,8 @@
 				INFOPLIST_FILE = RK4Spring_macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinto.RK4Spring;
-				PRODUCT_MODULE_NAME = RK4Spring;
 				PRODUCT_NAME = RK4Spring;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -506,7 +504,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RK4Spring_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinto.RK4Spring;
 				PRODUCT_MODULE_NAME = RK4Spring;
@@ -546,7 +544,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RK4Spring_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinto.RK4Spring;
 				PRODUCT_MODULE_NAME = RK4Spring;
@@ -665,6 +663,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -711,6 +710,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
