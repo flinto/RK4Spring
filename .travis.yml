@@ -8,8 +8,7 @@ before_install:
 - brew outdated carthage || brew upgrade carthage
 # before_script:
 # - carthage bootstrap
-script: xcodebuild test -scheme RK4Spring_iOS -sdk iphonesimulator -destination 'platform=iOS
-  Simulator,name=iPhone 7,OS=11.0'
+script: xcodebuild test -scheme RK4Spring_iOS -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=11.0'
 before_deploy:
 - ./CarthageScripts/build-static-framework.sh
 - carthage archive $FRAMEWORK_NAME

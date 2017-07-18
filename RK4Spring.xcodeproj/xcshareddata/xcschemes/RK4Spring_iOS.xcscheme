@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E3BBB561F1E757800894AF1"
+               BlueprintIdentifier = "6E3BBB681F1E759800894AF1"
                BuildableName = "RK4Spring.framework"
-               BlueprintName = "RK4Spring_macOS"
-               ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
+               BlueprintName = "RK4Spring_iOS"
+               ReferencedContainer = "container:RK4Spring.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6E3BBB701F1E759800894AF1"
+               BuildableName = "RK4Spring_iOSTests.xctest"
+               BlueprintName = "RK4Spring_iOSTests"
+               ReferencedContainer = "container:RK4Spring.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6E3BBB681F1E759800894AF1"
+            BuildableName = "RK4Spring.framework"
+            BlueprintName = "RK4Spring_iOS"
+            ReferencedContainer = "container:RK4Spring.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -47,10 +66,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E3BBB561F1E757800894AF1"
+            BlueprintIdentifier = "6E3BBB681F1E759800894AF1"
             BuildableName = "RK4Spring.framework"
-            BlueprintName = "RK4Spring_macOS"
-            ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
+            BlueprintName = "RK4Spring_iOS"
+            ReferencedContainer = "container:RK4Spring.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +84,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E3BBB561F1E757800894AF1"
+            BlueprintIdentifier = "6E3BBB681F1E759800894AF1"
             BuildableName = "RK4Spring.framework"
-            BlueprintName = "RK4Spring_macOS"
-            ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
+            BlueprintName = "RK4Spring_iOS"
+            ReferencedContainer = "container:RK4Spring.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

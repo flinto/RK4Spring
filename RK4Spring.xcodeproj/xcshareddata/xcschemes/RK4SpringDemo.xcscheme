@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E3BBB681F1E759800894AF1"
-               BuildableName = "RK4Spring.framework"
-               BlueprintName = "RK4Spring_iOS"
-               ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
+               BlueprintIdentifier = "6E3C28B51C20A02200CAD137"
+               BuildableName = "RK4SpringDemo.app"
+               BlueprintName = "RK4SpringDemo"
+               ReferencedContainer = "container:RK4Spring.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,24 +29,14 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E3BBB701F1E759800894AF1"
-               BuildableName = "RK4Spring_iOSTests.xctest"
-               BlueprintName = "RK4Spring_iOSTests"
-               ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E3BBB681F1E759800894AF1"
-            BuildableName = "RK4Spring.framework"
-            BlueprintName = "RK4Spring_iOS"
-            ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
+            BlueprintIdentifier = "6E3C28B51C20A02200CAD137"
+            BuildableName = "RK4SpringDemo.app"
+            BlueprintName = "RK4SpringDemo"
+            ReferencedContainer = "container:RK4Spring.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,15 +53,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E3BBB681F1E759800894AF1"
-            BuildableName = "RK4Spring.framework"
-            BlueprintName = "RK4Spring_iOS"
-            ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
+            BlueprintIdentifier = "6E3C28B51C20A02200CAD137"
+            BuildableName = "RK4SpringDemo.app"
+            BlueprintName = "RK4SpringDemo"
+            ReferencedContainer = "container:RK4Spring.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -81,15 +72,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E3BBB681F1E759800894AF1"
-            BuildableName = "RK4Spring.framework"
-            BlueprintName = "RK4Spring_iOS"
-            ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
+            BlueprintIdentifier = "6E3C28B51C20A02200CAD137"
+            BuildableName = "RK4SpringDemo.app"
+            BlueprintName = "RK4SpringDemo"
+            ReferencedContainer = "container:RK4Spring.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
