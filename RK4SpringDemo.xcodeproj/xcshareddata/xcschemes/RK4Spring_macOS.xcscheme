@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6E3BBB561F1E757800894AF1"
-               BuildableName = "RK4Spring_macOS.framework"
+               BuildableName = "RK4Spring.framework"
                BlueprintName = "RK4Spring_macOS"
                ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6E3BBB561F1E757800894AF1"
-            BuildableName = "RK4Spring_macOS.framework"
+            BuildableName = "RK4Spring.framework"
             BlueprintName = "RK4Spring_macOS"
             ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6E3BBB561F1E757800894AF1"
-            BuildableName = "RK4Spring_macOS.framework"
+            BuildableName = "RK4Spring.framework"
             BlueprintName = "RK4Spring_macOS"
             ReferencedContainer = "container:RK4SpringDemo.xcodeproj">
          </BuildableReference>
