@@ -11,7 +11,7 @@ before_script:
 script: xcodebuild test -scheme RK4Spring_iOS -sdk iphonesimulator -destination 'platform=iOS
   Simulator,name=iPhone 7,OS=11.0'
 before_deploy:
-- carthage build --no-skip-current
+- ./script/build.sh --no-skip-current
 - carthage archive $FRAMEWORK_NAME
 deploy:
   provider: releases
