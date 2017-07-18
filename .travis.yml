@@ -1,3 +1,23 @@
 language: objective-c
 osx_image: xcode9
-script: xcodebuild test -scheme RK4Spring_iOS -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=11.0'
+env:
+  global:
+  - FRAMEWORK_NAME=RK4Spring
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+before_script:
+- carthage bootstrap
+script: xcodebuild test -scheme RK4Spring_iOS -sdk iphonesimulator -destination 'platform=iOS
+  Simulator,name=iPhone 7,OS=11.0'
+before_deploy:
+- carthage build --no-skip-current
+- carthage archive $FRAMEWORK_NAME
+deploy:
+  provider: releases
+  api_key:
+    secure: xFyFX1BKvgphTttmD7lNX9A4B8AiDJLzCP8oQ0f3gm9G6/KQ8EfiQhT+VNeLYMyvPvV+BfMSOkgsNBGWiXyc0hRedFZuwo1bVHzgC7t9mcL77FEX60jkh2ZJ89cVVmhOAaidrLamNrGvdAoyDHEcg92rOXVaJWuc7jARakOHvmJDxVcDag0iPx7QmACTR5uyhtJ5e9URuUFhN6Os2lqMYTDwdPyirLtBq9LTfJJllXK1as1ao/7YJkAq867cL5TkXOg1ihKo/HnLlPu/y4lreKioTqNFgSUQ2/WVVuXWsdObXheulveXzCnrMHpitECIVVwRymbr2ke7MMWDw0bjY/Al8te3iY0fAWq4E9zFMVFU1ud9tsWZ78YcRp1MrQizCldvm2Fp2soE3XjvIBg4Og4tYGUWqhmLqMurvyIz4t9Pzrr7RHIvwEhV8LQvMYHm8AyMGAJxMh2CucMfCGHU4TWBI+qNPsIihI1smekU9sPo6Aer9v7bhBTeOriS708bS5FjZZg3Bx4LI9Hr5pKPwaASIRgrv2Wxy+Xf94JbVoqfDJraLoPj30ndGyb8sWlsNit3flg4/7ylDLA22EwKEAsHnq8miPSz1tMKTi36mkATGPogvry/oYkXyKKVMljx6B+R/mMZrZuzjcZOWALjTC4vdJOF4KrH6nkUTTlXbzU=
+  file: "$FRAMEWORK_NAME.framework.zip"
+  on:
+    repo: flinto/Spring
+    tags: true
