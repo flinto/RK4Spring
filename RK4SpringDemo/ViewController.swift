@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import RK4Spring
 
 class CustomView : NSView {
 
@@ -16,9 +17,9 @@ class CustomView : NSView {
 
 class ViewController: NSViewController {
 
-  dynamic var tension:Double  = 950
-  dynamic var friction:Double = 60
-  dynamic var velocity:Double = 0
+  @objc dynamic var tension:Double  = 950
+  @objc dynamic var friction:Double = 60
+  @objc dynamic var velocity:Double = 0
 
   @IBOutlet weak var customView:CustomView!
   var shape:CAShapeLayer!

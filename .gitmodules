@@ -1,0 +1,3 @@
+[submodule "CarthageScripts"]
+	path = CarthageScripts
+	url = https://github.com/flinto/CarthageScripts.git

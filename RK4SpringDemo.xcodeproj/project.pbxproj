@@ -199,6 +199,7 @@
 				6E3BBB531F1E757800894AF1 /* Frameworks */,
 				6E3BBB541F1E757800894AF1 /* Headers */,
 				6E3BBB551F1E757800894AF1 /* Resources */,
+				6EDE4D551F1EA742007374E1 /* Copy framework to Carthage folder */,
 			);
 			buildRules = (
 			);
@@ -217,6 +218,7 @@
 				6E3BBB651F1E759800894AF1 /* Frameworks */,
 				6E3BBB661F1E759800894AF1 /* Headers */,
 				6E3BBB671F1E759800894AF1 /* Resources */,
+				6EE360371F1EB3E80055A1DB /* Copy framework to Carthage folder */,
 			);
 			buildRules = (
 			);
@@ -276,6 +278,7 @@
 				TargetAttributes = {
 					6E3BBB561F1E757800894AF1 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 					6E3BBB681F1E759800894AF1 = {
 						CreatedOnToolsVersion = 9.0;
@@ -287,7 +290,7 @@
 					};
 					6E3C28B51C20A02200CAD137 = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -344,6 +347,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EDE4D551F1EA742007374E1 /* Copy framework to Carthage folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy framework to Carthage folder";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/CarthageScripts/copy_framework.sh\n        ";
+		};
+		6EE360371F1EB3E80055A1DB /* Copy framework to Carthage folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy framework to Carthage folder";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/CarthageScripts/copy_framework.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E3BBB521F1E757800894AF1 /* Sources */ = {
@@ -728,7 +762,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinto.RK4SpringDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -742,7 +776,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flinto.RK4SpringDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
